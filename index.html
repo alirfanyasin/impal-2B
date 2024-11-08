@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rancangan UI Aplikasi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin: 10px 0 5px;
+      }
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+      .link {
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Form Customer -->
+    <div class="container">
+      <h1>Registrasi Customer</h1>
+      <form>
+        <label for="customerName">Nama Customer</label>
+        <input
+          type="text"
+          id="customerName"
+          placeholder="Masukkan Nama Customer"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan Email" required />
+
+        <label for="phone">Nomor Telepon</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Masukkan Nomor Telepon"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan Password"
+          required
+        />
+
+        <button type="submit">Daftar</button>
+        <div class="link">
+          Sudah memiliki akun? <a href="#">Masuk di sini</a>
+        </div>
+      </form>
+    </div>
+
+    <br />
+
+    <!-- Form Driver -->
+    <div class="container">
+      <h1>Registrasi Driver</h1>
+      <form>
+        <label for="driverName">Nama Driver</label>
+        <input
+          type="text"
+          id="driverName"
+          placeholder="Masukkan Nama Driver"
+          required
+        />
+
+        <label for="dob">Tanggal Lahir</label>
+        <input type="date" id="dob" required />
+
+        <label for="phoneDriver">Nomor Telepon</label>
+        <input
+          type="tel"
+          id="phoneDriver"
+          placeholder="Masukkan Nomor Telepon"
+          required
+        />
+
+        <label for="passwordDriver">Password</label>
+        <input
+          type="password"
+          id="passwordDriver"
+          placeholder="Masukkan Password"
+          required
+        />
+
+        <button type="submit">Daftar</button>
+        <div class="link">
+          Sudah memiliki akun? <a href="#">Masuk di sini</a>
+        </div>
+      </form>
+    </div>
+
+    <br />
+
+    <!-- Form Admin -->
+    <div class="container">
+      <h1>Login Admin</h1>
+      <form>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Masukkan Username"
+          required
+        />
+
+        <label for="passwordAdmin">Password</label>
+        <input
+          type="password"
+          id="passwordAdmin"
+          placeholder="Masukkan Password"
+          required
+        />
+
+        <button type="submit">Masuk</button>
+      </form>
+    </div>
+  </body>
+</html>
